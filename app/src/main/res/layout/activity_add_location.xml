@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="AddLocationDataBinding">
+    <variable
+        name="LocationViewModel"
+        type="com.app.task.add_location.AddLocationViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".add_location.AddLocation">
+
+        <EditText
+            android:id="@+id/building_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:hint="@string/building_name"
+            android:textSize="@dimen/_16ssp" />
+
+        <EditText
+            android:id="@+id/appartment_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:hint="@string/appartment_name"
+            android:textSize="@dimen/_16ssp" />
+
+        <EditText
+            android:id="@+id/street_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:hint="@string/street_name"
+            android:textSize="@dimen/_16ssp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select City"
+            android:textSize="@dimen/_16ssp"
+            android:layout_margin="@dimen/_8sdp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:textSize="@dimen/_16ssp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Area"
+            android:textSize="@dimen/_16ssp"
+            android:layout_margin="@dimen/_8sdp"
+            android:textStyle="bold"/>
+
+
+
+        <Spinner
+            android:id="@+id/area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:spinnerMode="dropdown"
+            android:textSize="@dimen/_16ssp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16sdp"
+            android:text="Submit"
+            android:id="@+id/submit"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</layout>

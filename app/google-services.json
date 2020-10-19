@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1005065344591",
+    "firebase_url": "https://food-pings-customer.firebaseio.com",
+    "project_id": "food-pings-customer",
+    "storage_bucket": "food-pings-customer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005065344591:android:b61bda431585b2f6473c3a",
+        "android_client_info": {
+          "package_name": "com.app.task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1005065344591-qh4cirlt2pf7f8v63p3cdsod6bio8ptl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.task",
+            "certificate_hash": "1dce683a86d14de68ace3f29c6f2aa8f6c44e1c0"
+          }
+        },
+        {
+          "client_id": "1005065344591-8u906vcrs6hbqqcel6jr80v5q8vle9i2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSpdXB3biFKxMjAis_KEZhpQfA5qFRhCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1005065344591-8u906vcrs6hbqqcel6jr80v5q8vle9i2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1005065344591-qfg6m9d85l49mathjji80qvgf3eeqf26.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.finedineincustomer"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
