@@ -99,7 +99,7 @@ public class AddLocation extends BaseActivity {
                 cityAdapter = new CityAdapter(this,
                         android.R.layout.simple_spinner_item,
                         addresses.data.userAddress);
-                binding.city.setAdapter(areaAdapter); // Set the custom adapter to the spinner
+                binding.city.setAdapter(cityAdapter); // Set the custom adapter to the spinner
 
             } else {
                 setToast("Somthing error Wrong", this);
