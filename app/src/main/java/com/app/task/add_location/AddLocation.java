@@ -43,9 +43,9 @@ public class AddLocation extends BaseActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view,
                                        int position, long id) {
                 // Here you get the current item (a User object) that is selected by its position
-                Addresses.UserAddressBean userAddressBean = areaAdapter.getItem(position);
+                Addresses.AreasOfCitiesEntity userAddressBean = areaAdapter.getItem(position);
                 // Here you can do the action you want to...
-                seletedAreaID = userAddressBean.areaId;
+                seletedAreaID = userAddressBean.getAreaId();
 //                setToast(seletedAreaID + "", AddLocation.this);
             }
 
@@ -62,9 +62,9 @@ public class AddLocation extends BaseActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view,
                                        int position, long id) {
                 // Here you get the current item (a User object) that is selected by its position
-                Addresses.UserAddressBean userAddressBean = cityAdapter.getItem(position);
+                Addresses.CitiesEntity userAddressBean = cityAdapter.getItem(position);
                 // Here you can do the action you want to...
-                selectedCityID = userAddressBean.cityId;
+                selectedCityID = userAddressBean.getCityId();
 //                setToast(selectedCityID + "", AddLocation.this);
             }
 
@@ -92,13 +92,13 @@ public class AddLocation extends BaseActivity {
 
                 areaAdapter = new AreaAdapter(this,
                         android.R.layout.simple_spinner_item,
-                        addresses.data.userAddress);
+                        addresses.getData().getAreasOfCities());
                 binding.area.setAdapter(areaAdapter); // Set the custom adapter to the spinner
 
 
                 cityAdapter = new CityAdapter(this,
                         android.R.layout.simple_spinner_item,
-                        addresses.data.userAddress);
+                        addresses.getData().getCities());
                 binding.city.setAdapter(cityAdapter); // Set the custom adapter to the spinner
 
             } else {
